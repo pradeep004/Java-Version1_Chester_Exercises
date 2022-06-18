@@ -1,0 +1,8 @@
+
+public class HashMap {
+	public void run() {
+		HashMap game = new HashMap<> ();
+		
+	}
+
+}

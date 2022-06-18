@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Charecter c = new Charecter();
+		
+		Charecter jett = new Charecter("Jett",12,"Duelist");
+		Charecter fade = new Charecter("Fade","Brown","Black");
+		
+
+	}
+
+}

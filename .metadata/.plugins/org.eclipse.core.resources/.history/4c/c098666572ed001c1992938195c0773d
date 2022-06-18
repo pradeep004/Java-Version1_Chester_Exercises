@@ -1,0 +1,28 @@
+
+public class Cat extends Mammal{
+	
+	private String sound;
+	
+	public Cat(String name, String furColor,String sound) {
+		super(name,furColor);
+		this.sound = sound;	
+	}
+	
+	public void Sound() {
+		System.out.println(this.getSound());
+	}
+	
+	@Override
+	public void controlTemperature() {
+		// TODO Auto-generated method stub	
+	}
+
+	public String getSound() {
+		return sound;
+	}
+
+	public void setSound(String sound) {
+		this.sound = sound;
+	}
+
+}

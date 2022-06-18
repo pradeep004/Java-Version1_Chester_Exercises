@@ -1,0 +1,57 @@
+
+public class Charecter {
+	private String name ;
+	private String clothing;
+	private String background;
+	private int speed ;
+	private String Hair ;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getClothing() {
+		return clothing;
+	}
+	public void setClothing(String clothing) {
+		this.clothing = clothing;
+	}
+	public String getBackground() {
+		return background;
+	}
+	public void setBackground(String background) {
+		this.background = background;
+	}
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	public String getHair() {
+		return Hair;
+	}
+	public void setHair(String hair) {
+		Hair = hair;
+	}
+	
+	Charecter(String name, String clothing, String Hair){
+		this.name = name;
+		this.clothing= clothing;
+		this.Hair= Hair;
+		System.out.println("name :"+ this.name + ",clothing :"+this.clothing + ",Hair :"+this.Hair);
+		
+	}
+	Charecter (String name, int speed, String background){
+		this.name=name;
+		this.speed=speed;
+		this.background =background;
+		System.out.println("name :"+ this.name + ",Speed :"+this.speed + ",BackGround :"+this.background);
+	}
+	Charecter(){	
+	}
+	
+	
+
+}

@@ -1,0 +1,11 @@
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cat c = new Cat("ches","brown &white","meow");
+		c.Sound();
+
+	}
+
+}

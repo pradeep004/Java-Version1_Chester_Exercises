@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class HnadlingMoreData {
+	public void run() {
+		ArrayList<String> stringlist = new ArrayList<>();
+		
+		stringlist.add("Hello");
+		stringlist.add("world");
+		stringlist.add("HOw are you..?");
+		
+//		System.out.println(Arraylist);
+		
+		int i = 0;
+		while(i < stringlist.size()) {
+			System.out.println(stringlist.get(i));
+			i++;
+		}
+	}
+
+}

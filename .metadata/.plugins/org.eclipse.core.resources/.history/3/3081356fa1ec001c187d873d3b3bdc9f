@@ -1,0 +1,28 @@
+package textBasedGame;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the map size ofvalue X:");
+		int X = Integer.parseInt(sc.nextLine());
+		System.out.print("Enter the  map size Y:");
+		int Y = Integer.parseInt(sc.nextLine());
+		
+		Random rand = new Random();
+		int currentX = rand.nextInt(X+1);
+		int currentY = rand.nextInt(Y+1);
+		
+		
+		map m = new map(X, Y, currentX,currentY);
+		m.getInfo();
+		m.move("n");
+		System.out.println("11111");
+		
+	}
+
+}

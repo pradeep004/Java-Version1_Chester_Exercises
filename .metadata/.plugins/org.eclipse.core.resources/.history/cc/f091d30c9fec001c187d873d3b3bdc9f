@@ -1,0 +1,17 @@
+package textBasedGame;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		Characters mario = new Characters("Mario",12,"Hello..!");
+		map m = new map(10,10,2,3);
+		m.move("n");
+		m.getInfo();
+		
+	}
+
+}

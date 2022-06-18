@@ -1,0 +1,12 @@
+
+public class main {
+
+	public static void main(String[] args) {
+
+		Animal  luno = new Cat("luno","brown and white","meow");
+		luno.getInfo();
+		
+
+	}
+
+}

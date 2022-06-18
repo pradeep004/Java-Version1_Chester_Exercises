@@ -1,0 +1,6 @@
+package textBasedGame;
+
+public class Circle extends Shape{
+	
+
+}

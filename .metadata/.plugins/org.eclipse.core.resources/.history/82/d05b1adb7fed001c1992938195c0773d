@@ -1,0 +1,24 @@
+
+public class main {
+
+	public static void main(String[] args) {
+
+		Animal  luno = new Cat("luno","brown and white","meow");
+		luno.Sleep();
+		
+		((Cat)luno).Sound();
+		
+		Cat sch = (Cat)luno;
+		luno.getInfo();
+		
+		System.out.println("------Platypus-------");
+		Platypus p = new Platypus("Jimmy", "brown");
+		p.getInfo();
+		p.controlTemperature();
+		p.Sleep();
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("please enter the name of the animal :");
+		String name = sc.nextLine();
+		System.out.println("please enter the fur color :");
+		String furColor = sc.nextLine();
+		System.out.println("pelase enter the sound that animal make:");
+		String  sound = sc.nextLine();
+		Animal  luno = new Cat(name,furColor,sound);
+		luno.sleep();
+		
+		((Cat)luno).Sound();
+		
+		Cat sch = (Cat)luno;
+		luno.getInfo(); 
+	
+		
+		System.out.println("------Platypus-------");
+		Platypus p = new Platypus(name, furColor);
+		p.getInfo();
+		p.controlTemperature();
+		p.sleep();
+		
+		Animal pack = new Platypus(name, furColor);
+		((Platypus)pack).ducksPoperties();
+		((Platypus)pack).controlTemperature();
+		System.out.println(((Platypus)pack).teeth);
+		System.out.println(((Platypus)pack).bills);
+		
+	}
+	
+	
+	
+
+}

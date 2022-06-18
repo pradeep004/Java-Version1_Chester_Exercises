@@ -1,0 +1,25 @@
+
+public class Charecter {
+	String name ;
+	String clothing;
+	String background;
+	int speed ;
+	String Hair ;
+	Charecter(String name, String clothing, String Hair){
+		this.name = name;
+		this.clothing= clothing;
+		this.Hair= Hair;
+		System.out.println("name"+ this.name + "/nclothing :"+this.clothing + "Hair"+this.Hair);
+		
+	}
+	Charecter (String name, int speed, String background){
+		this.name=name;
+		this.speed=speed;
+		this.background =background;
+	}
+	Charecter(){	
+	}
+	
+	
+
+}
