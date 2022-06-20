@@ -10,13 +10,8 @@ public class ArrayTask {
 			for(int i :iter) {
 			System.out.println(i);
 			}
-		}
-		
-//		for (int i= 0;i)
-		
-				
-			
-			
+		}		
+					
 	}
 
 }

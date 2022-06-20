@@ -1,0 +1,15 @@
+import javax.sql.RowSetEvent;
+
+public class DayOneReverseWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] wordList = {"Stressed","parts", "Straw","Keep"};
+		String reverseWord = null;
+		for (String words : wordList) {
+			System.out.println(words);
+		}
+
+	}
+
+}

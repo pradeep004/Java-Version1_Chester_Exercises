@@ -1,0 +1,17 @@
+
+public class DayOneReverseWord {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] wordList = {"Stressed","parts", "Straw","Keep"};
+		String reverseWord = null;
+		for (int i = 0;i<wordList.length;i++) {
+			reverseWord = wordList[i];
+			System.out.println(reverseWord);
+			
+			
+		}
+
+	}
+
+}

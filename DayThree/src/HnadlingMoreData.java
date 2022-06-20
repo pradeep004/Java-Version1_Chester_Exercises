@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class HnadlingMoreData {
 	public void run() {
 		ArrayList<String> color = new ArrayList<>();
+		String[] colors = {"Red", "Blue","Yellow"};
 		
 		color.add("Red");
 		color.add("Blue");
@@ -17,9 +18,7 @@ public class HnadlingMoreData {
 //			}
 //			i++;
 //			
-//		}
-		
-		
+//		}		
 		for(String word : color) {
 			if (!word.contains("e")) {
 //				color.remove(word);
@@ -47,6 +46,14 @@ public class HnadlingMoreData {
 		
 		
 //		Arrays are fixed in size and unodered 
+		
+		System.out.println(colors[1]);
+		int i = 0;
+		while(i< colors.length)
+		{
+			System.out.println(colors[i]);
+			i++;
+		}
 	}
 
 }

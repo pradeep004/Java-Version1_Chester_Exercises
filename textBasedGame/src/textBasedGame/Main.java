@@ -9,12 +9,26 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please the charecter name :");
-		String name = sc.nextLine();
-		System.out.println("Please the enter the health of the character :");
-		int health = Integer.parseInt(sc.nextLine());
-		System.out.println("please enter the characte's favorite line:");
-		String catchPhrase = sc.nextLine();
+		String name = null,catchPhrase = null;
+		int health = 0;
+		boolean correctValue = false;
+		while(!correctValue) {
+			try {
+				
+				System.out.println("Please the charecter name :");
+				name = sc.nextLine();
+				System.out.println("Please the enter the health of the character :");
+				health = Integer.parseInt(sc.nextLine());
+				System.out.println("please enter the characte's favorite line:");
+				catchPhrase = sc.nextLine();
+				correctValue= true;
+				break;
+			}catch(NumberFormatException|InputMismatchException ex) {
+				System.out.println("Error try again:");
+				sc.nextLine();
+			}
+			
+		}
 		
 		Characters ch = new Characters(name, health,catchPhrase);
 		ch.getInfo();
@@ -22,7 +36,7 @@ public class Main {
 		
 		int X = 0;
 		int Y = 0;
-		boolean correctValue = false;
+		
 		while(!correctValue) {
 			try {
 				System.out.print("Enter the map size ofvalue X:");
@@ -51,11 +65,16 @@ public class Main {
 		
 		String direction;
 		while(m.getCurrentX() != winX || m.getCurrentY() != winY) {
-			System.out.print("Please enter a direction N, E, S, or W:");
-			direction = sc.nextLine();
-			m.move(direction);
-			m.getInfo();
-			
+			try {
+				System.out.print("Please enter a direction N, E, S, or W:");
+				direction = sc.nextLine();
+				m.move(direction);
+				m.getInfo();	
+			}catch (InputMismatchException ex){
+				System.out.println("Enter the given direction: ");
+				direction = sc.nextLine();
+				
+			}			
 		}
 		System.out.println("You've reached your destination");
 		

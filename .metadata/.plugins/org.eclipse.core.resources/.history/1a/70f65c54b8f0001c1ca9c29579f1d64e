@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+public class hashma {
+	
+	public void run() {
+		HashMap<String, String > game = new HashMap<>();
+	
+//		adding the key value pairs 
+		game.put("football","11players");
+		game.put("Cricket", "11players");
+		game.put("hockey","9players");
+		
+		
+		List<String> games = new ArrayList<>(game.keySet());
+		Collections.sort(games);
+		
+		Iterator<String> iter = game.values().iterator();
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
+			
+		}
+	}
+
+}
